@@ -31,11 +31,6 @@ p {
 span {
   font-family: "Quicksand", sans-serif;
 }
-
-.content {
-  flex: 1 0 auto;
-}
-
 /*End global*/
 
 /*Start reusable*/
@@ -57,31 +52,59 @@ h4 {
 }
 /*End reusable*/
 
-/*Start header*/
+/********Start header*********/
 
-.top-nav {
-  width: 100%;
-  position: relative;
-  padding: 10px;
+/*NAV*/
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  background: red;
+  height: 50px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+} 
+
+.nav-menu a:hover {  /*on hover menu turns diff color*/
+  background: tomato;
+  color: white;
 }
+
+.nav-menu ul {   /*menu & ul now flex*/
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu ul li {  /*positions ul relative*/
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu li:hover .dropdown-menu li {
+  top: 0; /*flushes submenu against navbar*/
+  display: block;
+}
+
+.dropdown-menu li {
+  display: none; /*hides submenu*/
+  position: absolute;
+}
+
+.dropdown-menu {
+  position: absolute; /*positions submenu items to left top side*/
+  display: flex;
+  flex-direction: column; /*submenu now in column format*/
+  width: 100%; /*each submenu width matches it's menu's width"*/
+}
+
 .logo h1 {
   font-size: 3.3rem;
   font-family: "Teko", sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: 0;
-  padding-top: 10px;
-}
-.nav-list {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-.nav-link {
-  padding: 1rem;
-  font-size: 1.1 rem;
 }
 
 .landing-image {
@@ -89,14 +112,14 @@ h4 {
   height: auto;
   padding: 12px 0;
 }
-/*End header*/
+/********End header*********/
 
 /*Start Store*/
 
 .store-heading {
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
-  margin: 20px 35px 30px 35px;
+  margin: 30px 35px 30px 35px;
   text-align: center;
   position: relative;
 }
@@ -164,8 +187,6 @@ h4 {
   height: auto;
   width: 100%;
 }
-    .product-image:hover {
-    }
 
 .product-info {
   text-align: center;
