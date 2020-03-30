@@ -1,12 +1,13 @@
 /*Start global*/
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html,
 body {
   font-family: "Quicksand", sans-serif;
-  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -32,13 +33,10 @@ span {
   font-family: "Quicksand", sans-serif;
 }
 /*End global*/
-
-/*Start reusable*/
-
 h2 {
   font-size: 27px;
   font-weight: 100;
-  color: darkgray;
+  color: #333333;
 }
 
 h3 {
@@ -55,19 +53,86 @@ h4 {
 /********Start header*********/
 
 /*NAV*/
+.header {
+  width: 100%;
+  height: 60px;
+}
+
+h1 {
+  display: inline-block;
+}
+
+.logo {
+  font-size:1.7rem;
+  color: #333333;
+  font-family: "Teko", sans-serif;
+  text-align: left;
+  margin-top: 0;
+  float: left;
+  line-height: 50px;
+  padding-left: 15px;
+  padding-top: 3px;
+}
+
+form {
+  float: right;
+  line-height: 52px;
+  padding-right: 14px;
+  width: 225px;
+}
+
+input {
+  background: transparent;
+  width: 100%;
+  border: 2px solid #eeeeee; 
+  border-radius: .3rem;
+  text-indent: 5px;
+  min-height: 28px; 
+  font-size: 13px;
+}
+
+form .fa-search {
+  float: right;
+}
+
+.header-link p{
+  float: right;
+  padding-bottom: 0;
+  line-height: 52px;
+  padding-right: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.caret {       /*created custom caret*/
+  border: solid black;
+  border-width: 0 1.8px 1.8px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 8px;
+}
+
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: white;
-  justify-content: center;
-  background: red;
-  height: 50px;
+  color: #333333;
+  justify-content: left;
+  background: white;
+  height: 25px;
   text-transform: uppercase;
   box-sizing: border-box;
+  padding: 0 20px 0 20px;
 } 
 
+.dropdown-menu li{
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
 .nav-menu a:hover {  /*on hover menu turns diff color*/
-  background: tomato;
+  background: #333333;
   color: white;
 }
 
@@ -78,7 +143,6 @@ h4 {
 
 .nav-menu ul li {  /*positions ul relative*/
   position: relative;
-  width: 100%;
   text-align: center;
 }
 
@@ -99,12 +163,13 @@ h4 {
   width: 100%; /*each submenu width matches it's menu's width"*/
 }
 
-.logo h1 {
+.top-nav h1 {
   font-size: 3.3rem;
+  color: #333333;
   font-family: "Teko", sans-serif;
   display: flex;
   justify-content: left;
-  margin: 0;
+  margin-left: 10px;
 }
 
 .landing-image {
@@ -335,7 +400,7 @@ h4 {
 
 /*Start media queries*/
 @media (max-width: 980px) {
-  .logo h1 {
+  .top-nav h1 {
     font-size: 3rem;
   }
 
@@ -365,7 +430,7 @@ h4 {
 }
 
 @media (max-width: 650px) {
-  .logo h1 {
+  .top-nav h1 {
     font-size: 2.5rem;
   }
 
