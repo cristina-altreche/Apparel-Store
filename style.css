@@ -195,6 +195,7 @@ input {
   height: 3px;
   background-color: black;
   margin: 3px;
+  border-radius: 30%;
 }
 
 .nav-mobile a {
