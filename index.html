@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ned Apparel</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ned Apparel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!--Side Nav on Mobile 2nd Attempt-->    
+    <!--SIDE NAV ON MOBILE-->
     <div id="sideNav" class="sideNav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
@@ -32,109 +34,78 @@
     </div>
 
 
-<!--HEADER SECTION-->
-<div id="main">
-<header>
-    <div class="header">
-        <a href="index.html" class="logo"><h1>n.e.d.</h1></a>
-        <form>
-            <input type="text" name="searchbar" placeholder="Search.." size="70">
-        </form>
-        <a href="#" class="header-link"><p>Account</p></a>
-        <a href="#" class="header-link"><p>Cart</p></a>
-    </div>
+    <!--HEADER SECTION-->
+    <div id="main">
+        <!--wrapped entire page for side nav push-->
+        <header>
+            <!--full screen nav-->
+            <div class="header">
+                <a href="index.html" class="logo">
+                    <h1>n.e.d.</h1>
+                </a>
+                <form>
+                    <input type="text" name="searchbar" placeholder="Search.." size="70">
+                </form>
+                <a href="#" class="header-link">
+                    <p>Account</p>
+                </a>
+                <a href="#" class="header-link">
+                    <p>Cart</p>
+                </a>
+            </div>
 
-    <div class="nav-menu">
-        <ul class="menu">
-            <li><a href="#">Men's<i class="caret"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="mens.html">Tee's</a></li>
-                    <li><a href="#">Jeans</a></li>
-                </ul>
-            <li><a href="#">Women's <i class="caret"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Tee's</a></li>
-                    <li><a href="#">Jeans</a></li>
-                </ul>
-            </li>
-            <li><a href="#">ABOUT</a></li>
-        </ul>    
-    </div>
-</header>    
-
-
-<!--Top Nav on Mobile 2nd attempt-->
-<div class="mobile-wrap"> 
-   <span id="burger" style= "font-size: 1.5rem" onclick="openNav()">&#9776</span>
-   <a href="#"><i class="mobile-icon fa fa-search"></i></a>
-   <a href="#"><i class="mobile-icon fa fa-user"></i></a>
-   <a href="#"><i class="mobile-icon fa fa-shopping-bag"></i></a>
-</div>
-<div>
-   <a href="index.html" id="logo-mobile"class="logo-mobile"><h1>n.e.d.</h1></a>
-</div>
-
-
-
-
-<!--MOBILE NAV First Attempt
- <div class="mobile-wrap">
-     <input type="checkbox" class="toggler">
-    <div class="burger">
-        <div></div>
-    </div>
-    <div class="mobile-menu">
-        <div>
-            <div>
-                <ul>
-                    <li><a href="#">Men</a>
-                        <ul>
+            <div class="nav-menu">
+                <ul class="menu">
+                    <li><a href="#">Men's<i class="caret"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="mens.html">Tee's</a></li>
+                            <li><a href="#">Jeans</a></li>
+                        </ul>
+                    <li><a href="#">Women's <i class="caret"></i></a>
+                        <ul class="dropdown-menu">
                             <li><a href="#">Tee's</a></li>
                             <li><a href="#">Jeans</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Women</a>
-                        <ul>
-                            <li><a href="#">Tee's</a></li>
-                            <li><a href="#">Jeans</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">ABOUT</a></li>
                 </ul>
             </div>
+        </header>
+
+        <div class="mobile-wrap">
+            <!--mobile screen nav-->
+            <span id="burger" onclick="openNav()">&#9776</span>
+            <a href="#"><i class="mobile-icon fa fa-search"></i></a>
+            <a href="#"><i class="mobile-icon fa fa-user"></i></a>
+            <a href="#"><i class="mobile-icon fa fa-shopping-bag"></i></a>
         </div>
-    </div>
-    <a href="#"><i class="mobile-icon fa fa-search"></i></a>
-    <a href="#"><i class="mobile-icon fa fa-user"></i></a>
-    <a href="#"><i class="mobile-icon fa fa-shopping-bag"></i></a>
-</div>
-<div>
-    <a href="index.html" id="logo-mobile"class="logo-mobile"><h1>n.e.d.</h1></a>
-</div>-->
+        <div>
+            <a href="index.html" id="logo-mobile" class="logo-mobile">
+                <h1>n.e.d.</h1>
+            </a>
+        </div>
 
-
-
-
-<!--LANDING-->           
-<div class="landing-section">
-    <img class="landing-image" src="images/landimg1.jpg" alt="The image isn't showing">
-</div>    
-<div class="landing-section">
-    <img class="landing-image" src="images/landimg2.jpg" alt="The image isn't showing">
-</div>
-<!--STORE SECTION--> 
-<div class="store-heading">
-    <div class="store-headings"><H2>This is what we do for His glory</H2></div>
-</div>
-<!--2nd gallery rough draft-->
-<section class="2ndgallery">
-    <div class="gall-container">
-        <img src="images/storeimg1.png">
-        <img src="images/storeimg2.png"> 
-        <img src="images/storeimg3.png"> 
-        <img src="images/storeimg4.png"> 
-    </div>
-</section>
+        <div class="landing-section">
+            <img class="landing-image" src="images/landimg1.jpg" alt="The image isn't showing">
+        </div>
+        <div class="landing-section">
+            <img class="landing-image" src="images/landimg2.jpg" alt="The image isn't showing">
+        </div>
+        <!--STORE SECTION-->
+        <div class="store-heading">
+            <div class="store-headings">
+                <H2>This is what we do for His glory</H2>
+            </div>
+        </div>
+        <!--2nd gallery rough draft-->
+        <section class="2ndgallery">
+            <div class="gall-container">
+                <img src="images/storeimg1.png">
+                <img src="images/storeimg2.png">
+                <img src="images/storeimg3.png">
+                <img src="images/storeimg4.png">
+            </div>
+        </section>
         <div class="store-container">
             <div class="store-images"><img class="store-image" src="images/MockUp_1.jpg">
                 <div class="store-details">
@@ -147,96 +118,95 @@
                     <p class="product-description">"Give is to Receive" Short Sleeve</p>
                     <p class="product-cost">$28.99</p>
                 </div>
-            </div> 
-        </div>
-    <div class="store-heading"></div>
- <!--SOCIAL MEDIA PC size-->
- <section class="connect-pc">
-    <div class="connect-container-pc">
-        <div class="col-one">
-            <div class="connect-heading-pc">Customer Service</div>
-                 <div class="connect-link">
-                    <ul>
-                        <li class="connect-links-pc">Return Policy</li>
-                        <li class="connect-links-pc">Contact Us</li>
-                        <li class="connect-links-pc">Privacy Policy</li>
-                        <li class="connect-links-pc">About Brand</li>
-                        <li class="connect-links-pc">Account</li>
-                    </ul>
-                 </div>
-        </div>
-        <div class="col-two">
-            <div class="connect-heading-pc">Customer Care</div>
-            <div class="address-phone">
-                <br>
-                <p>NED, Inc.</p>
-                <p>1111 City, State Zip</p>
-                <p>(888) 888-8888</p>
-                <p>nedapparel@gmail.com</p>
             </div>
         </div>
-        <div class="col-three">
-            <div class="connect-heading-pc">Connect</div>
-                <div class="social-media-pc">
-                    <ul class="ul-container"> 
-                        <li class="li-container"><a href="#" class="icon-link">
-                            <i class="fa fa-facebook-square"></i></a><span id="sm-title">Facebook</span>
+        <div class="store-heading"></div>
+        <!--SOCIAL MEDIA PC size-->
+        <section class="connect-pc">
+            <div class="connect-container-pc">
+                <div class="col-one">
+                    <div class="connect-heading-pc">Customer Service</div>
+                    <div class="connect-link">
+                        <ul>
+                            <li class="connect-links-pc">Return Policy</li>
+                            <li class="connect-links-pc">Contact Us</li>
+                            <li class="connect-links-pc">Privacy Policy</li>
+                            <li class="connect-links-pc">About Brand</li>
+                            <li class="connect-links-pc">Account</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-two">
+                    <div class="connect-heading-pc">Customer Care</div>
+                    <div class="address-phone">
+                        <br>
+                        <p>NED, Inc.</p>
+                        <p>1111 City, State Zip</p>
+                        <p>(888) 888-8888</p>
+                        <p>nedapparel@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-three">
+                    <div class="connect-heading-pc">Connect</div>
+                    <div class="social-media-pc">
+                        <ul class="ul-container">
+                            <li class="li-container"><a href="#" class="icon-link">
+                                    <i class="fa fa-facebook-square"></i></a><span id="sm-title">Facebook</span>
+                            </li>
+                            <li class="li-container"><a href="#" class="icon-link">
+                                    <i class="fa fa-instagram"></i></a><span id="sm-title">Instagram</span>
+                            </li>
+                            <li class="li-container"><a href="#" class="icon-link">
+                                    <i class="fa fa-pinterest-square"></i></a><span id="sm-title">Pintrest</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SOCIAL MEDIA Smaller Size Screens-->
+        <section class="connect">
+            <div class="connect-container">
+                <div class="customer-number">Customer Care: (888) 888-8888</div>
+                <div class="connect-heading">Connect!</div>
+                <div class="social-media">
+                    <ul>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
                         </li>
-                        <li class="li-container"><a href="#" class="icon-link">
-                            <i class="fa fa-instagram"></i></a><span id="sm-title">Instagram</span>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fa fa-instagram"></i>
+                            </a>
                         </li>
-                        <li class="li-container"><a href="#" class="icon-link">
-                            <i class="fa fa-pinterest-square"></i></a><span id="sm-title">Pintrest</span>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fa fa-pinterest-square"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
-        </div>
+                <div class="connect-link">
+                    <ul>
+                        <li class="connect-links">Return Policy</li>
+                        <li class="connect-links">Contact Us</li>
+                        <li class="connect-links">Privacy Policy</li>
+                        <li class="connect-links">About</li>
+                        <li class="connect-links">Account</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER-->
+        <footer class="copyright">
+            <p>&copy; 2019 N.E.D. Apparel</p>
+        </footer>
+        </section>
     </div>
-    </section>
-<!--SOCIAL MEDIA Smaller Size Screens-->
-<section class="connect">
-<div class="connect-container">
-    <div class="customer-number">Customer Care: (888) 888-8888</div>
-    <div class="connect-heading">Connect!</div>
-    <div class="social-media">
-        <ul> 
-            <li> 
-                <a href="#" class="icon-link">
-                    <i class="fa fa-facebook-square"></i>           
-                </a>
-            </li>
-            <li> 
-                <a href="#" class="icon-link">
-                    <i class="fa fa-instagram"></i>
-                </a>
-            </li>
-            <li> 
-                <a href="#" class="icon-link">
-                    <i class="fa fa-pinterest-square"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="connect-link">
-        <ul>
-            <li class="connect-links">Return Policy</li>
-            <li class="connect-links">Contact Us</li>
-            <li class="connect-links">Privacy Policy</li>
-            <li class="connect-links">About</li>
-            <li class="connect-links">Account</li>
-        </ul>
-    </div>
-</div>
-</section>
-</div>    
-
-
-<!-- FOOTER-->
-<footer class="copyright">
-<p>&copy; 2019 N.E.D. Apparel</p>
-</footer>
-</section> 
 </body>
 
 <script src="script.js"></script>
+
 </html>

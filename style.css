@@ -1,5 +1,5 @@
 /******GLOBAL START*****/
-*{
+* {
   box-sizing: border-box;
   margin: 0;
 }
@@ -32,6 +32,7 @@ p {
 span {
   font-family: "Quicksand", sans-serif;
 }
+
 /*****GLOBAL END*****/
 
 
@@ -46,6 +47,7 @@ h3 {
   font-weight: 100;
   font-size: 27px;
 }
+
 /*****REUSABLE END*****/
 
 
@@ -65,7 +67,7 @@ h1 {
 }
 
 .logo {
-  font-size:1.7rem;
+  font-size: 1.7rem;
   color: #333333;
   font-family: "Teko", sans-serif;
   margin-right: auto;
@@ -82,14 +84,14 @@ form {
 input {
   background: transparent;
   width: 100%;
-  border: 2px solid #eeeeee; 
+  border: 2px solid #eeeeee;
   border-radius: .1rem;
   text-indent: 5px;
-  min-height: 35px; 
+  min-height: 35px;
   font-size: 13px;
 }
 
-.header-link p{
+.header-link p {
   padding-bottom: 0;
   line-height: 52px;
   padding-right: 10px;
@@ -97,7 +99,8 @@ input {
   text-transform: uppercase;
 }
 
-.caret {   /*created custom caret*/
+.caret {
+  /*created custom caret*/
   border: solid black;
   border-width: 0 1.8px 1.8px 0;
   display: inline-block;
@@ -107,7 +110,7 @@ input {
   margin-left: 8px;
 }
 
-.nav-menu{
+.nav-menu {
   padding-left: 10px;
 }
 
@@ -121,43 +124,51 @@ input {
   text-transform: uppercase;
   box-sizing: border-box;
   padding: 0 20px 0 20px;
-} 
+}
 
-.dropdown-menu li{
+.dropdown-menu li {
   border: 1px solid #eeeeee;
   border-top: 0;
 }
 
-.nav-menu a:hover {  /*on hover menu turns diff color*/
+.nav-menu a:hover {
+  /*on hover menu turns diff color*/
   background: #333333;
   color: white;
 }
 
-.nav-menu ul {   /*menu & ul now flex*/
+.nav-menu ul {
+  /*menu & ul now flex*/
   list-style: none;
   display: flex;
 }
 
-.nav-menu ul li {  /*positions ul relative*/
+.nav-menu ul li {
+  /*positions ul relative*/
   position: relative;
   text-align: center;
 }
 
 .nav-menu li:hover .dropdown-menu li {
-  top: 0; /*flushes submenu against navbar*/
+  top: 0;
+  /*flushes submenu against navbar*/
   display: block;
 }
 
 .dropdown-menu li {
-  display: none; /*hides submenu*/
+  display: none;
+  /*hides submenu*/
   position: absolute;
 }
 
 .dropdown-menu {
-  position: absolute; /*positions submenu items to left top side*/
+  position: absolute;
+  /*positions submenu items to left top side*/
   display: flex;
-  flex-direction: column; /*submenu now in column format*/
-  width: 100%; /*each submenu width matches it's menu's width"*/
+  flex-direction: column;
+  /*submenu now in column format*/
+  width: 100%;
+  /*each submenu width matches it's menu's width"*/
 }
 
 .top-nav h1 {
@@ -174,6 +185,7 @@ input {
   height: auto;
   padding: 12px 0;
 }
+
 /********HEADER END*********/
 
 /*****Mobile Nav Second Attempt CSS*****/
@@ -213,30 +225,21 @@ input {
 
 #burger {
   cursor: pointer;
+  padding: 2px 18px 4px 18px;
+  font-size: 22px;
 }
 
 #main {
   transition: margin-left .5s;
-  padding: 16px;
 }
-
-@media screen and (max-height: 450px) {
-  .sideNav {padding-top: 15px;}
-  .sideNav a {font-size: 18px;}
-}
-
-
-
-
 
 /*****MOBILE NAV START*****/
 .mobile-wrap {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
   padding-top: 35px;
-  margin-left: -50px;
 }
 
 .mobile-wrap .mobile-icon {
@@ -265,7 +268,8 @@ input {
   justify-content: center;
 }
 
-.mobile-wrap .burger > div {   /*hamburger line*/
+.mobile-wrap .burger>div {
+  /*hamburger line*/
   position: relative;
   width: 100%;
   height: 3px;
@@ -276,8 +280,9 @@ input {
   transition: all 0.4s ease;
 }
 
-.mobile-wrap .burger > div::before, /*top and bottom lines*/
-.mobile-wrap .burger > div::after {
+.mobile-wrap .burger>div::before,
+/*top and bottom lines*/
+.mobile-wrap .burger>div::after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -287,34 +292,39 @@ input {
   background: inherit;
 }
 
-.mobile-wrap .burger > div::after { /*moves line down*/
+.mobile-wrap .burger>div::after {
+  /*moves line down*/
   top: 8px;
 }
 
-.mobile-wrap .toggler:checked + .burger > div { /*toggler animate*/
+.mobile-wrap .toggler:checked+.burger>div {
+  /*toggler animate*/
   transform: rotate(135deg);
 }
 
-.mobile-wrap .toggler:checked + .burger > div::before,  /*turn lines into X*/
-.mobile-wrap .toggler:checked + .burger > div::after {
+.mobile-wrap .toggler:checked+.burger>div::before,
+/*turn lines into X*/
+.mobile-wrap .toggler:checked+.burger>div::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-.mobile-wrap .toggler:checked:hover + .burger > div { /*rotate on hover when checked*/
+.mobile-wrap .toggler:checked:hover+.burger>div {
+  /*rotate on hover when checked*/
   transform: rotate(225deg)
 }
 
-.mobile-wrap .toggler:checked ~ .mobile-menu { /*show menu*/
+.mobile-wrap .toggler:checked~.mobile-menu {
+  /*show menu*/
   visibility: visible;
 }
 
-.mobile-wrap .toggler:checked ~ .mobile-menu > div {
+.mobile-wrap .toggler:checked~.mobile-menu>div {
   transform: scale(1);
-  transition-duration: 0.6s ;
+  transition-duration: 0.6s;
 }
 
-.mobile-wrap .toggler:checked ~ .mobile-menu > div > div {
+.mobile-wrap .toggler:checked~.mobile-menu>div>div {
   opacity: 1;
   transition: opacity 0.4s ease;
 }
@@ -332,7 +342,8 @@ input {
   justify-content: center;
 }
 
-.mobile-wrap .mobile-menu > div { /*menu style*/
+.mobile-wrap .mobile-menu>div {
+  /*menu style*/
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100vh;
@@ -344,7 +355,7 @@ input {
   transition: all 0.4s ease;
 }
 
-.mobile-wrap .mobile-menu > div > div {
+.mobile-wrap .mobile-menu>div>div {
   text-align: left;
   width: 100%;
   max-height: 100vh;
@@ -355,19 +366,21 @@ input {
   transition: opacity 0.4s ease;
 }
 
-.mobile-wrap .mobile-menu > div > div > ul > li { /*styles menu list*/
+.mobile-wrap .mobile-menu>div>div>ul>li {
+  /*styles menu list*/
   font-size: 1rem;
-  color: white; 
+  color: white;
   text-transform: uppercase;
   line-height: 3rem;
 }
 
-.mobile-wrap .mobile-menu > div > div > ul > li > a { /* styles a links*/
+.mobile-wrap .mobile-menu>div>div>ul>li>a {
+  /* styles a links*/
   transition: color 0.4s ease;
   color: white;
 }
 
-.mobile-wrap .mobile-menu > div > div > ul > li > ul> li > a {
+.mobile-wrap .mobile-menu>div>div>ul>li>ul>li>a {
   position: relative;
   color: white;
   font-size: 1rem;
@@ -391,7 +404,7 @@ input {
 
 div .logo-mobile {
   display: flex;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   color: #333333;
   font-family: "Teko", sans-serif;
   align-items: center;
@@ -404,6 +417,7 @@ div .logo-mobile {
 .page-wrapper {
   transform: translateX(0);
 }
+
 /*****MOBILE NAV END*****/
 
 
@@ -451,6 +465,7 @@ div .logo-mobile {
 .product-cost {
   font-size: 17px;
 }
+
 /*****STORE SECTION END******/
 
 
@@ -463,13 +478,15 @@ div .logo-mobile {
   text-align: center;
   font-size: 13px;
 }
-    .homepage-link:visited{
-      color: #999;
-    }
-    .homepage-link:hover{
-      color: black;
-      transition: color 650ms;
-    }
+
+.homepage-link:visited {
+  color: #999;
+}
+
+.homepage-link:hover {
+  color: black;
+  transition: color 650ms;
+}
 
 .product-container {
   display: grid;
@@ -488,8 +505,9 @@ div .logo-mobile {
 
 .product-price {
   font-size: 13px;
-  color:#5a5a5a;
+  color: #5a5a5a;
 }
+
 /*End Products Section/
 
 
@@ -527,6 +545,7 @@ div .logo-mobile {
   margin: 0;
   padding-bottom: 10px;
 }
+
 .social-media i {
   font-size: 1.8rem;
   padding: 6px;
@@ -553,6 +572,7 @@ div .logo-mobile {
   color: #bd081c;
   transition: color 650ms;
 }
+
 /*mobile size footer end*/
 
 /*pc size footer start*/
@@ -606,16 +626,16 @@ div .logo-mobile {
   font-size: 14px;
   padding: 5px 0 5px 10px;
 }
+
 /*pc size footer end*/
 
 /*Start footer*/
 .copyright {
-  width: 100%;
   text-align: center;
   padding: 1rem 0 1rem 0;
-  position: relative;
   font-size: 0.7rem;
 }
+
 /*End footer*/
 
 .sample-item {
@@ -633,6 +653,7 @@ div .logo-mobile {
   .nav-link {
     font-size: 1rem;
   }
+
   h2 {
     font-size: 21px;
   }
@@ -661,7 +682,7 @@ div .logo-mobile {
 
 
 @media (min-width: 980px) {
-  .mobile-wrap  {
+  .mobile-wrap {
     display: none;
   }
 
@@ -737,4 +758,15 @@ div .logo-mobile {
     display: none;
   }
 }
+
+@media screen and (max-height: 450px) {
+  .sideNav {
+    padding-top: 15px;
+  }
+
+  .sideNav a {
+    font-size: 18px;
+  }
+}
+
 /*End media queries*/

@@ -3,7 +3,7 @@ function openNav() {
     document.getElementById("main").style.marginLeft = "250px";
 }
 
-function closeNav {
+function closeNav() {
     document.getElementById("sideNav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
