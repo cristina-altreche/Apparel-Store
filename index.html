@@ -11,8 +11,30 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">  
 </head>
 <body>
-<!--HEADER-->    
- <header>
+
+<!--Side Nav on Mobile 2nd Attempt-->    
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="#">Men</a>
+                <ul>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Jeans</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Women</a>
+                <ul>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Jeans</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+<!--HEADER SECTION-->
+<div id="main">
+<header>
     <div class="header">
         <a href="index.html" class="logo"><h1>n.e.d.</h1></a>
         <form>
@@ -40,7 +62,22 @@
     </div>
 </header>    
 
-<!--MOBILE NAV--> 
+
+<!--Top Nav on Mobile 2nd attempt-->
+<div class="mobile-wrap"> 
+   <span id="burger" style= "font-size: 1.5rem" onclick="openNav()">&#9776</span>
+   <a href="#"><i class="mobile-icon fa fa-search"></i></a>
+   <a href="#"><i class="mobile-icon fa fa-user"></i></a>
+   <a href="#"><i class="mobile-icon fa fa-shopping-bag"></i></a>
+</div>
+<div>
+   <a href="index.html" id="logo-mobile"class="logo-mobile"><h1>n.e.d.</h1></a>
+</div>
+
+
+
+
+<!--MOBILE NAV First Attempt
  <div class="mobile-wrap">
      <input type="checkbox" class="toggler">
     <div class="burger">
@@ -73,7 +110,9 @@
 </div>
 <div>
     <a href="index.html" id="logo-mobile"class="logo-mobile"><h1>n.e.d.</h1></a>
-</div>
+</div>-->
+
+
 
 
 <!--LANDING-->           
@@ -189,8 +228,7 @@
     </div>
 </div>
 </section>
-
-
+</div>    
 
 
 <!-- FOOTER-->
@@ -199,4 +237,6 @@
 </footer>
 </section> 
 </body>
+
+<script src="script.js"></script>
 </html>
