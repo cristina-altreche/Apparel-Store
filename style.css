@@ -35,7 +35,6 @@ span {
 
 /*****GLOBAL END*****/
 
-
 /****REUSABLE START****/
 h2 {
   font-size: 27px;
@@ -49,7 +48,6 @@ h3 {
 }
 
 /*****REUSABLE END*****/
-
 
 /********HEADER START*********/
 .header {
@@ -85,7 +83,7 @@ input {
   background: transparent;
   width: 100%;
   border: 2px solid #eeeeee;
-  border-radius: .1rem;
+  border-radius: 0.1rem;
   text-indent: 5px;
   min-height: 35px;
   font-size: 13px;
@@ -203,9 +201,9 @@ input {
 }
 
 .sideNav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 0;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -223,6 +221,34 @@ input {
   margin-left: 50px;
 }
 
+.dropdown {
+  position: relative;
+  padding-left: 25px;
+}
+.sideNav .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0;
+  background-color: inherit;
+  margin: 0;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  position: relative;
+  z-index: 2000;
+  display: none;
+}
+
+.dropdown-content a {
+  background-color: inherit;
+  border-bottom: 1px solid rgb(58, 57, 57);
+  width: 50%;
+  padding-left: 0;
+}
+
 #burger {
   cursor: pointer;
   padding: 2px 18px 4px 18px;
@@ -230,7 +256,8 @@ input {
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-right 0.5s;
+  position: absolute;
 }
 
 /*****MOBILE NAV START*****/
@@ -268,7 +295,7 @@ input {
   justify-content: center;
 }
 
-.mobile-wrap .burger>div {
+.mobile-wrap .burger > div {
   /*hamburger line*/
   position: relative;
   width: 100%;
@@ -283,7 +310,7 @@ input {
 .mobile-wrap .burger>div::before,
 /*top and bottom lines*/
 .mobile-wrap .burger>div::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: -8px;
@@ -292,12 +319,12 @@ input {
   background: inherit;
 }
 
-.mobile-wrap .burger>div::after {
+.mobile-wrap .burger > div::after {
   /*moves line down*/
   top: 8px;
 }
 
-.mobile-wrap .toggler:checked+.burger>div {
+.mobile-wrap .toggler:checked + .burger > div {
   /*toggler animate*/
   transform: rotate(135deg);
 }
@@ -309,22 +336,22 @@ input {
   transform: rotate(90deg);
 }
 
-.mobile-wrap .toggler:checked:hover+.burger>div {
+.mobile-wrap .toggler:checked:hover + .burger > div {
   /*rotate on hover when checked*/
-  transform: rotate(225deg)
+  transform: rotate(225deg);
 }
 
-.mobile-wrap .toggler:checked~.mobile-menu {
+.mobile-wrap .toggler:checked ~ .mobile-menu {
   /*show menu*/
   visibility: visible;
 }
 
-.mobile-wrap .toggler:checked~.mobile-menu>div {
+.mobile-wrap .toggler:checked ~ .mobile-menu > div {
   transform: scale(1);
   transition-duration: 0.6s;
 }
 
-.mobile-wrap .toggler:checked~.mobile-menu>div>div {
+.mobile-wrap .toggler:checked ~ .mobile-menu > div > div {
   opacity: 1;
   transition: opacity 0.4s ease;
 }
@@ -342,7 +369,7 @@ input {
   justify-content: center;
 }
 
-.mobile-wrap .mobile-menu>div {
+.mobile-wrap .mobile-menu > div {
   /*menu style*/
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -355,7 +382,7 @@ input {
   transition: all 0.4s ease;
 }
 
-.mobile-wrap .mobile-menu>div>div {
+.mobile-wrap .mobile-menu > div > div {
   text-align: left;
   width: 100%;
   max-height: 100vh;
@@ -366,7 +393,7 @@ input {
   transition: opacity 0.4s ease;
 }
 
-.mobile-wrap .mobile-menu>div>div>ul>li {
+.mobile-wrap .mobile-menu > div > div > ul > li {
   /*styles menu list*/
   font-size: 1rem;
   color: white;
@@ -374,18 +401,17 @@ input {
   line-height: 3rem;
 }
 
-.mobile-wrap .mobile-menu>div>div>ul>li>a {
+.mobile-wrap .mobile-menu > div > div > ul > li > a {
   /* styles a links*/
   transition: color 0.4s ease;
   color: white;
 }
 
-.mobile-wrap .mobile-menu>div>div>ul>li>ul>li>a {
+.mobile-wrap .mobile-menu > div > div > ul > li > ul > li > a {
   position: relative;
   color: white;
   font-size: 1rem;
   line-height: 2rem;
-
 }
 
 .mobile-menu ul li ul li {
@@ -419,7 +445,6 @@ div .logo-mobile {
 }
 
 /*****MOBILE NAV END*****/
-
 
 /*****STORE SECTION START*****/
 .store-heading {
@@ -468,7 +493,6 @@ div .logo-mobile {
 
 /*****STORE SECTION END******/
 
-
 /*Products Section*/
 .content-main {
   padding: 80px 0;
@@ -513,7 +537,6 @@ div .logo-mobile {
 
 /*Start portfolio*/
 /*End services*/
-
 
 /*Start timeline*/
 /*End timeline*/
@@ -643,7 +666,6 @@ div .logo-mobile {
   grid-template-columns: 20% 20% 20% 20%;
 }
 
-
 /*Start media queries*/
 @media (max-width: 980px) {
   .top-nav h1 {
@@ -680,7 +702,6 @@ div .logo-mobile {
   }
 }
 
-
 @media (min-width: 980px) {
   .mobile-wrap {
     display: none;
@@ -690,7 +711,6 @@ div .logo-mobile {
     display: none;
   }
 }
-
 
 @media (max-width: 650px) {
   .top-nav h1 {
@@ -744,8 +764,6 @@ div .logo-mobile {
     font-size: 9px;
   }
 }
-
-
 
 @media (min-width: 1024px) {
   .connect-container {
