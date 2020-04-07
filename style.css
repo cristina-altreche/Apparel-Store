@@ -186,7 +186,7 @@ input {
 
 /********HEADER END*********/
 
-/*****Mobile Nav Second Attempt CSS*****/
+/*****MOBILE SIDE NAV START*****/
 .sideNav {
   height: 100%;
   width: 0;
@@ -258,7 +258,9 @@ input {
 #main {
   transition: margin-right 0.5s;
   position: absolute;
+  overflow: hidden;
 }
+/*****MOBILE SIDE NAV END*****/
 
 /*****MOBILE NAV START*****/
 .mobile-wrap {
@@ -274,160 +276,6 @@ input {
   font-size: 18px;
 }
 
-.toggler {
-  position: relative;
-  left: 3.5rem;
-  z-index: 2;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-}
-
-.burger {
-  cursor: pointer;
-  z-index: 1;
-  padding: 1.1rem;
-  width: 58px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mobile-wrap .burger > div {
-  /*hamburger line*/
-  position: relative;
-  width: 100%;
-  height: 3px;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-
-.mobile-wrap .burger>div::before,
-/*top and bottom lines*/
-.mobile-wrap .burger>div::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: -8px;
-  width: 100%;
-  height: 3px;
-  background: inherit;
-}
-
-.mobile-wrap .burger > div::after {
-  /*moves line down*/
-  top: 8px;
-}
-
-.mobile-wrap .toggler:checked + .burger > div {
-  /*toggler animate*/
-  transform: rotate(135deg);
-}
-
-.mobile-wrap .toggler:checked+.burger>div::before,
-/*turn lines into X*/
-.mobile-wrap .toggler:checked+.burger>div::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-.mobile-wrap .toggler:checked:hover + .burger > div {
-  /*rotate on hover when checked*/
-  transform: rotate(225deg);
-}
-
-.mobile-wrap .toggler:checked ~ .mobile-menu {
-  /*show menu*/
-  visibility: visible;
-}
-
-.mobile-wrap .toggler:checked ~ .mobile-menu > div {
-  transform: scale(1);
-  transition-duration: 0.6s;
-}
-
-.mobile-wrap .toggler:checked ~ .mobile-menu > div > div {
-  opacity: 1;
-  transition: opacity 0.4s ease;
-}
-
-.mobile-wrap .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 100%;
-  visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mobile-wrap .mobile-menu > div {
-  /*menu style*/
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  /*flex: none;*/
-  justify-content: left;
-  padding-top: 20px;
-  transform: translateX(-100%);
-  transition: all 0.4s ease;
-}
-
-.mobile-wrap .mobile-menu > div > div {
-  text-align: left;
-  width: 100%;
-  max-height: 100vh;
-  padding-left: 1.3rem;
-  display: flex;
-  justify-content: start;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.mobile-wrap .mobile-menu > div > div > ul > li {
-  /*styles menu list*/
-  font-size: 1rem;
-  color: white;
-  text-transform: uppercase;
-  line-height: 3rem;
-}
-
-.mobile-wrap .mobile-menu > div > div > ul > li > a {
-  /* styles a links*/
-  transition: color 0.4s ease;
-  color: white;
-}
-
-.mobile-wrap .mobile-menu > div > div > ul > li > ul > li > a {
-  position: relative;
-  color: white;
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
-.mobile-menu ul li ul li {
-  display: none;
-  width: 50px;
-  border-bottom: 2px solid;
-  border-color: black;
-  padding-top: 0px;
-  position: relative;
-  left: 18px;
-}
-
-.mobile-menu ul li:hover ul li {
-  display: block;
-}
-
 div .logo-mobile {
   display: flex;
   font-size: 1.5rem;
@@ -439,11 +287,6 @@ div .logo-mobile {
   line-height: 50px;
   padding-top: 5px;
 }
-
-.page-wrapper {
-  transform: translateX(0);
-}
-
 /*****MOBILE NAV END*****/
 
 /*****STORE SECTION START*****/
@@ -774,16 +617,6 @@ div .logo-mobile {
 @media (max-width: 1024px) {
   .connect-container-pc {
     display: none;
-  }
-}
-
-@media screen and (max-height: 450px) {
-  .sideNav {
-    padding-top: 15px;
-  }
-
-  .sideNav a {
-    font-size: 18px;
   }
 }
 
