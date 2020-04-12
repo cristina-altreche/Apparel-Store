@@ -49,134 +49,98 @@ h3 {
 
 /*****REUSABLE END*****/
 
-/********HEADER START*********/
-.header {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 10px 0 10px;
-}
-
-h1 {
-  display: inline-block;
-}
-
-.logo {
-  font-size: 1.7rem;
-  color: #333333;
+/******BOOTSTRAP NAV START******/
+.navbar-brand {
+  font-size: 45px;
+  font-weight: 900;
   font-family: "Teko", sans-serif;
-  margin-right: auto;
-  margin-top: 0;
-  line-height: 50px;
-  padding-left: 15px;
-  padding-top: 10px;
 }
 
-form {
-  padding-right: 100px;
+.navbar-nav .nav-item .nav-link {
+  color: black;
 }
 
-input {
-  background: transparent;
-  width: 100%;
-  border: 2px solid #eeeeee;
-  border-radius: 0.1rem;
-  text-indent: 5px;
-  min-height: 35px;
+.navbar-toggler {
+  border: none;
+}
+
+div .cart-status {
+  display: block;
+  width: 300px;
+  padding: 0.5rem 0;
   font-size: 13px;
 }
 
-.header-link p {
-  padding-bottom: 0;
-  line-height: 52px;
-  padding-right: 10px;
-  font-size: 12px;
-  text-transform: uppercase;
+.cart-status a {
+  text-decoration: none;
 }
 
-.caret {
-  /*created custom caret*/
-  border: solid black;
-  border-width: 0 1.8px 1.8px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  margin-left: 8px;
+.cart-status a:hover {
+  color: rgba(0, 0, 0, 0.7);
 }
 
-.nav-menu {
-  padding-left: 10px;
+div .cart-status span {
+  float: right;
 }
 
-.nav-menu a {
-  display: flex;
-  align-items: center;
-  color: #333333;
-  justify-content: left;
-  background: white;
-  height: 25px;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  padding: 0 20px 0 20px;
-}
-
-.dropdown-menu li {
-  border: 1px solid #eeeeee;
-  border-top: 0;
-}
-
-.nav-menu a:hover {
-  /*on hover menu turns diff color*/
-  background: #333333;
-  color: white;
-}
-
-.nav-menu ul {
-  /*menu & ul now flex*/
-  list-style: none;
-  display: flex;
-}
-
-.nav-menu ul li {
-  /*positions ul relative*/
-  position: relative;
+.cart-count {
+  background: #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  right: 10px;
+  color: #fff;
+  line-height: 20px;
   text-align: center;
 }
 
-.nav-menu li:hover .dropdown-menu li {
-  top: 0;
-  /*flushes submenu against navbar*/
-  display: block;
+.fancy-toggler.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.dropdown-menu li {
-  display: none;
-  /*hides submenu*/
-  position: absolute;
+.form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
 }
 
-.dropdown-menu {
-  position: absolute;
-  /*positions submenu items to left top side*/
-  display: flex;
-  flex-direction: column;
-  /*submenu now in column format*/
-  width: 100%;
-  /*each submenu width matches it's menu's width"*/
+.navbar-nav .dropdown-menu {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
 }
 
-.top-nav h1 {
-  font-size: 3.3rem;
-  color: #333333;
-  font-family: "Teko", sans-serif;
-  display: flex;
-  justify-content: left;
-  margin-left: 10px;
+.dropdown-item {
+  font-size: 0.8rem;
 }
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-custom {
+  padding: 2px 16px;
+}
+
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.form-control:focus {
+  border-color: #ced4da;
+  -webkit-box-shadow: -1px -1px 3px 2px rgba(214, 214, 214, 1);
+  -moz-box-shadow: -1px -1px 3px 2px rgba(214, 214, 214, 1);
+  box-shadow: -1px -1px 3px 2px rgba(214, 214, 214, 1);
+}
+
+/*****BOOTSTRAP NAV END*******/
+
+/********HEADER START*********/
 
 .landing-image {
   width: 100%;
@@ -186,107 +150,8 @@ input {
 
 /********HEADER END*********/
 
-/*****MOBILE SIDE NAV START*****/
-.sideNav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sideNav a {
-  padding: 8px 0;
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sideNav a:hover {
-  color: #f1f1f1;
-}
-
-.sideNav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.dropdown {
-  position: relative;
-  padding-left: 25px;
-}
-.sideNav .dropbtn {
-  border: none;
-  outline: none;
-  color: white;
-  padding: 0;
-  background-color: inherit;
-  margin: 0;
-  text-transform: uppercase;
-  overflow: hidden;
-}
-
-.dropdown-content {
-  position: relative;
-  z-index: 2000;
-  display: none;
-}
-
-.dropdown-content a {
-  background-color: inherit;
-  border-bottom: 1px solid rgb(58, 57, 57);
-  width: 50%;
-  padding-left: 0;
-}
-
-#burger {
-  cursor: pointer;
-  padding: 2px 18px 4px 18px;
-  font-size: 22px;
-}
-
-#main {
-  transition: margin-right 0.5s;
-  position: absolute;
-  overflow: hidden;
-}
-/*****MOBILE SIDE NAV END*****/
-
 /*****MOBILE NAV START*****/
-.mobile-wrap {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 35px;
-}
 
-.mobile-wrap .mobile-icon {
-  padding: 0 20px;
-  font-size: 18px;
-}
-
-div .logo-mobile {
-  display: flex;
-  font-size: 1.5rem;
-  color: #333333;
-  font-family: "Teko", sans-serif;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0;
-  line-height: 50px;
-  padding-top: 5px;
-}
 /*****MOBILE NAV END*****/
 
 /*****STORE SECTION START*****/
@@ -618,6 +483,40 @@ div .logo-mobile {
   .connect-container-pc {
     display: none;
   }
+}
+
+@media (max-width: 992px) {
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all ease 0.5s;
+  }
+
+  .open {
+    transform: translateX(0);
+  }
+  .navbar-nav {
+    overflow-y: auto;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.open {
+  display: block;
 }
 
 /*End media queries*/
