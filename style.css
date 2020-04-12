@@ -58,6 +58,9 @@ h3 {
 
 .navbar-nav .nav-item .nav-link {
   color: black;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
 .navbar-toggler {
@@ -67,7 +70,7 @@ h3 {
 div .cart-status {
   display: block;
   width: 300px;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
   font-size: 13px;
 }
 
@@ -104,6 +107,13 @@ div .cart-status span {
   border-left: none;
   border-right: none;
   border-radius: 0;
+  margin-right: 0.5rem;
+}
+
+.form-inline {
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-nav .dropdown-menu {
@@ -114,7 +124,7 @@ div .cart-status span {
 }
 
 .dropdown-item {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .btn {
@@ -122,10 +132,10 @@ div .cart-status span {
 }
 
 .btn-custom {
-  padding: 2px 16px;
+  padding: 4px 10px;
 }
 
-.btn-outline-dark:hover {
+.btn-custom:hover {
   color: #fff;
   background-color: black;
   border-color: black;
