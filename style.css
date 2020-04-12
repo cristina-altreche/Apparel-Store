@@ -224,6 +224,7 @@ div .nav-link .cart-count {
   text-align: center;
   font-size: 13px;
   padding: 25px;
+  margin: 20px 0;
 }
 
 .homepage-link:visited {
