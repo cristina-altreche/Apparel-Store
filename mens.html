@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Ned Apparel</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet" />
@@ -14,72 +15,62 @@
 
 <body>
 
-  <!--SIDE NAV ON MOBILE-->
-  <div id="sideNav" class="sideNav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<div class="dropdown">  
-    <button class="dropbtn" onclick="dropDown()"><a href="#" >Men</a></button>
-    <div id="myDropdown" class="dropdown-content">
-        <a href="mens.html">T-Shirts</a>
-        <a href="#">Jeans</a>
-    </div>
-</div>
-<div class="dropdown">
-    <button class="dropbtn" onclick="dropDown2()"><a href="#" >Women</a></button>
-    <div id="myDropdown2" class="dropdown-content">
-        <a href="#">T-Shirts</a>
-        <a href="#">Jeans</a>
-    </div>
-</div> 
-</div>
-
-<!--MEN'S PRODUCTS PAGE-->
-  <div id="main">
-  <header>
-    <div class="header">
-      <a href="index.html" class="logo">
-        <h1>n.e.d.</h1>
-      </a>
-      <form>
-        <input type="text" name="searchbar" placeholder="Search.." size="70">
-      </form>
-      <a href="#" class="header-link">
-        <p>Account</p>
-      </a>
-      <a href="#" class="header-link">
-        <p>Cart</p>
-      </a>
-    </div>
-
-    <div class="nav-menu">
-      <ul class="menu">
-          <li><a href="#">Men's<i class="caret"></i></a>
-              <ul class="dropdown-menu">
-                  <li><a href="mens.html">Tee's</a></li>
-                  <li><a href="#">Jeans</a></li>
-              </ul>
-          <li><a href="#">Women's <i class="caret"></i></a>
-              <ul class="dropdown-menu">
-                  <li><a href="#">Tee's</a></li>
-                  <li><a href="#">Jeans</a></li>
-              </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-sm-start align-items-lg-center fixed-top">
+    <a class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2 ml-auto" href="index.html">n.e.d</a>
+    <button class="fancy-toggler navbar-toggler align-self-center p-0" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="custom-collapse collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-white p-1 p-lg-0 mt-5 mt-lg-0 mobileMenu" id="navbarSupportedContent">
+      <div class="cart-container order-lg-9">
+        <div class="nav-item cart-status">
+          <a class="nav-link" href="#">
+            <span class="cart-count">0</span>
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>Cart</a>
+        </div>
+      </div>
+  
+      <ul class="navbar-nav align-self-stretch mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Men
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="mens.html">T-Shirt</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Jeans</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Women
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">T-Shirt</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Jeans</a>
+            </div>
           </li>
-          <li><a href="#">ABOUT</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Kids
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Boys</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Girls</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clearance</a>
+          </li>
       </ul>
-  </div>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn-custom btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+</nav> 
+<div class="overlay"></div>  
   </header>
-  <div class="mobile-wrap">
-    <!--mobile screen nav-->
-    <span id="burger" onclick="openNav()">&#9776</span>
-    <a href="#"><i class="mobile-icon fa fa-search"></i></a>
-    <a href="#"><i class="mobile-icon fa fa-user"></i></a>
-    <a href="#"><i class="mobile-icon fa fa-shopping-bag"></i></a>
-</div>
-<div>
-    <a href="index.html" id="logo-mobile" class="logo-mobile">
-        <h1>n.e.d.</h1>
-    </a>
-</div>
 
   <section>
     <div class="content-main">
@@ -269,7 +260,9 @@
   </section>
 </div>  
 </body>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
 </html>

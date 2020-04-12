@@ -60,6 +60,7 @@ h3 {
   color: black;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
+  margin-top: 8px;
   text-transform: uppercase;
 }
 
@@ -69,9 +70,6 @@ h3 {
 
 div .cart-status {
   display: block;
-  width: 300px;
-  padding: 0.5rem 1rem;
-  font-size: 13px;
 }
 
 .cart-status a {
@@ -98,6 +96,12 @@ div .cart-status span {
   text-align: center;
 }
 
+div .nav-link .cart-count {
+  margin-left: 10px;
+  margin-top: 2px;
+  font-size: 12px;
+}
+
 .fancy-toggler.navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -112,7 +116,7 @@ div .cart-status span {
 
 .form-inline {
   flex-wrap: nowrap;
-  width: 100%;
+  width: 300px;
   padding: 0.5rem 1rem;
 }
 
@@ -219,6 +223,7 @@ div .cart-status span {
 .breadcrum {
   text-align: center;
   font-size: 13px;
+  padding: 25px;
 }
 
 .homepage-link:visited {
@@ -511,6 +516,15 @@ div .cart-status span {
   }
   .navbar-nav {
     overflow-y: auto;
+  }
+
+  div .cart-status {
+    display: block;
+    width: 300px;
+  }
+
+  .custom-collapse {
+    margin-top: 5rem !important;
   }
 }
 
